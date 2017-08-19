@@ -1,0 +1,16 @@
+{
+  "name": "groupedo",
+  "version": "1.0.0",
+  "description": "group project 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jameka, madeleine, edgar, trevor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "mysql2": "^1.4.0",
+    "sequelize": "^4.5.0"
+  }
+}
