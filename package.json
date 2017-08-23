@@ -9,8 +9,10 @@
   "author": "jameka, madeleine, edgar, trevor",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "mysql2": "^1.4.0",
+    "path": "^0.12.7",
     "sequelize": "^4.5.0"
   }
 }

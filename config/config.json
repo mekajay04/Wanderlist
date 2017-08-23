@@ -8,7 +8,7 @@
     },
     "test": {
         "username": "root",
-        "password": "meter1204",
+        "password": "",
         "database": "groupedo",
         "host": "127.0.0.1",
         "dialect": "mysql"
