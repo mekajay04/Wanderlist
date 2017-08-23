@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <nav class="#1565c0 blue darken-3 text-stationary" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Wanderlist</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">My Itinerary</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">My Itinerary</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Wanderlist</title>
@@ -28,67 +13,81 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
+ <nav class="#1565c0 blue darken-3 text-stationary" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo heading h5">Wanderlist</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">My Itinerary</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">My Itinerary</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
     <div class="carousel carousel-slider center" data-indicators="true">
         <div class="carousel-fixed-item center">
         </div>
-        <!-- FIRST PANEL - CITIES -->
-        <div class="carousel-item red white-text" href="#one!">
-            <!-- <img src="/img/planning.png"> -->
-            <h2>Choose A City</h2>
-            <p class="white-text">Most Traveled Cities in 2017</p>
-            <br>
-            <br>
-            <br>
-            <a class="btn waves-effect white grey-text darken-text-2">Bangkok</a>
-            <a class="btn waves-effect white grey-text darken-text-2">London</a>
-            <a class="btn waves-effect white grey-text darken-text-2">Paris</a>
-            <a class="btn waves-effect white grey-text darken-text-2">Dubai</a>
-            <a class="btn waves-effect white grey-text darken-text-2">New York City</a>
-        </div>
-        <!-- SECOND PANEL - HOTELS TO - BE IN JS -->
-        <div class="carousel-item amber white-text" href="#two!">
-            <h2>.. Hotel Choices</h2>
-            <p class="white-text">Choices based on 2017 top Trivago reviews</p>
-            <br>
-            <br>
-            <br>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-        </div>
-        <!-- THIRD PANEL- THINGS TO DO - TO BE IN JS -->
-        <div class="carousel-item green white-text" href="#three!">
-            <h2>Top 5 Things To Do In ..</h2>
-            <p class="white-text">Choices based on 2017 top Trivago reviews</p>
-            <br>
-            <br>
-            <br>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-        </div>
-        <!-- FORTH PANEL - PLACES TO EAT - TO BE IN JS -->
-        <div class="carousel-item blue white-text" href="#four!">
-            <h2>Places To Eat In ..</h2>
-            <p class="white-text">Choices based on 2017 top Trivago reviews</p>
-            <br>
-            <br>
-            <br>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-            <a class="btn waves-effect white grey-text darken-text-2">button</a>
-        </div>
+<!-- FIRST PANEL - CITIES -->
+    <div class="carousel-item red white-text " href="#one!">
+      <h2>Choose A City</h2>
+      <p class="white-text">Most Traveled Cities in 2017</p>
+      <br>
+      <br>
+      <br>
+        <a class="btn waves-effect white grey-text darken-text-2" id="bkk">Bangkok</a>
+        <a class="btn waves-effect white grey-text darken-text-2" id="lon">London</a>
+        <a class="btn waves-effect white grey-text darken-text-2" id="par">Paris</a>
+        <a class="btn waves-effect white grey-text darken-text-2" id="dub">Dubai</a>
+        <a class="btn waves-effect white grey-text darken-text-2" id="ny">New York City</a>
+    </div>
+<!-- SECOND PANEL - HOTELS TO - BE IN JS -->
+    <div class="carousel-item amber white-text" href="#two!">
+      <h2>Hotel Choices</h2>
+      <p class="white-text">Choices based on 2017 top Trivago reviews</p>
+      <br>
+      <br>
+      <br>
+        <a class="btn waves-effect white grey-text darken-text-2" id="hotel0">button</a>
+        <a class="btn waves-effect white grey-text darken-text-2" id="hotel1">button</a>
+        <a class="btn waves-effect white grey-text darken-text-2" id="hotel2">button</a>
+        <a class="btn waves-effect white grey-text darken-text-2" id="hotel3">button</a>
+        <a class="btn waves-effect white grey-text darken-text-2" id="hotel4">button</a>
+    </div>
+<!-- THIRD PANEL- THINGS TO DO - TO BE IN JS -->
+    <div class="carousel-item green white-text" href="#three!">
+      <h2>Top 5 Things To Do In ..</h2>
+      <p class="white-text">Choices based on 2017 top Trivago reviews</p>
+      <br>
+      <br>
+      <br>
+        <a class="btn waves-effect white grey-text darken-text-2" id="events0">button</a>
+        <a class="btn waves-effect white grey-text darken-text-2" id="events1">button</a>
+        <a class="btn waves-effect white grey-text darken-text-2" id="events2">button</a>
+        <a class="btn waves-effect white grey-text darken-text-2" id="events3">button</a>
+        <a class="btn waves-effect white grey-text darken-text-2" id="events4">button</a>
+    </div>
+<!-- FOURTH PANEL - PLACES TO EAT - TO BE IN JS -->
+    <div class="carousel-item blue white-text" href="#four!">
+      <h2>Places To Eat In ..</h2>
+      <p class="white-text">Choices based on 2017 top Trivago reviews</p>
+      <br>
+      <br>
+      <br>
+        <a class="btn waves-effect white grey-text darken-text-2 last" id="restaurant0">button</a>
+        <a class="btn waves-effect white grey-text darken-text-2 last" id="restaurant1">button</a>
+        <a class="btn waves-effect white grey-text darken-text-2 last" id="restaurant2">button</a>
+        <a class="btn waves-effect white grey-text darken-text-2 last" id="restaurant3">button</a>
+        <a class="btn waves-effect white grey-text darken-text-2 last" id="restaurant4">button</a>
+    </div>
     </div>
     <br>
     <br>
@@ -136,8 +135,9 @@
             <div class="row">
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
-                    <h4>Contact Us</h4>
-                    <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                    <h4>Our Vision</h4>
+                    <p class="left-align light">The development team at Wanderlist has made it simple to pick a destination without days of research. People love our destinations, hotels, and to-do choices, in fact, we dare to say everyone does.
+                    We've tried to take the stress of travel decision making, especially international travel, and make it simple. Once you've gone through our four prompts take a look at your new itinerary, click the link and book, that simple!</p>
                 </div>
             </div>
         </div>
@@ -152,107 +152,69 @@
         </div>
         <div class="parallax"><img src="/img/background3.jpg" alt="Unsplashed background img 3"></div>
     </div>
-
+<br>
 <!-- The Team -->
-<div class="container">
-        <div class="home-doctors  clearfix">
-
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 ">
-                        <div class="slogan-section animated fadeInUp clearfix ae-animation-fadeInUp">
-                            <h2><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> Meet our <span>Team</span> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></h2>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-
-                    <!-- entry1 -->
-                    <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
-                        <div class="common-doctor animated fadeInUp clearfix ae-animation-fadeInUp">
-
-                            <figure>
-                                <img src="/img/Jameka.png" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2">
-                            </figure>
-
-                            <div class="text-content">
-                                <h5>Jameka Jones</h5>
-                                <!-- <div class="for-border"></div> -->
-                                <h5><small>Web Developer</small></h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- entry2 -->
-                    <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
-                        <div class="common-doctor animated fadeInUp clearfix ae-animation-fadeInUp">
-
-                            <figure>
-                                <img width="670" height="500" src="/img/Trevor.png" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2">
-                            </figure>
-
-                            <div class="text-content">
-                                <h5>Trevor Satterite</h5>
-                                <!-- <div class="for-border"></div> -->
-                                <h5><small>Web Developer</small></h5>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- entry3 -->
-                    <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
-                        <div class="common-doctor animated fadeInUp clearfix ae-animation-fadeInUp">
-
-                            <figure>
-                                <img width="670" height="500" src="/img/Madeleine.png" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2">
-                            </figure>
-
-                            <div class="text-content">
-                                <h5>Madeleine</h5>
-                                <!-- <div class="for-border"></div> -->
-                                <h5><small>Web Developer</small></h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- entry4 -->
-                    <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
-                        <div class="common-doctor animated fadeInUp clearfix ae-animation-fadeInUp">
-
-
-                            <figure>
-                                <img width="670" height="500" src="/img/Edgar.png" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2">
-                            </figure>
-
-                            <div class="text-content">
-                                <h5>Edgar</h5>
-                                <!-- <div class="for-border"></div> -->
-                                <h5><small>Web Developer</small></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- // -->
-                    <div class="visible-sm clearfix margin-gap"></div>
-                </div>
-
+    <div class="row" style="">
+            <div class="col s10 m7 l2">
             </div>
+            <div class="col s10 m7 l2">
+              <div class="card card-panel hoverable">
+                <div class="card-image">
+                  <img src="/img/Jameka.png">
+                  <span class="card-title">Jameka</span>
+                </div>
+                <div class="card-content">
+                  <p>Web Developer</p>
+                </div>
 
-        </div>
-</div>
-        <!-- //The Team -->
+              </div>
+            </div>
+            <div class="col s10 m7 l2">
+              <div class="card card-panel hoverable">
+                <div class="card-image">
+                  <img src="/img/Trevor.png">
+                  <span class="card-title">Trevor</span>
+                </div>
+                <div class="card-content">
+                  <p>Web Developer</p>
+                </div>
 
+              </div>
+            </div>
+            <div class="col s10 m7 l2">
+              <div class="card card-panel hoverable">
+                <div class="card-image">
+                  <img src="/img/Madeleine.png">
+                  <span class="card-title">Madeleine</span>
+                </div>
+                <div class="card-content">
+                  <p>Web Developer</p>
+                </div>
 
+              </div>
+            </div>
+            <div class="col s10 m7 l2">
+              <div class="card card-panel hoverable">
+                <div class="card-image">
+                  <img src="/img/Edgar.png">
+                  <span class="card-title">Edgar</span>
+                </div>
+                <div class="card-content">
+                  <p>Web Developer</p>
+                </div>
 
-
-
+              </div>
+            </div>
+          </div>
+<br>
+<br>
+<br>
     <footer class="page-footer #0277bd light-blue darken-3">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">WANDERLIST Bio</h5>
-                    <p class="grey-text text-lighten-4">We are a team of college students.</p>
+                    <p class="grey-text text-lighten-4">We are a team of college students that want travelling to be simple.</p>
                 </div>
                 
             </div>
@@ -276,9 +238,129 @@
     });
     </script>
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+
+        <!-- JQUERY Section -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".indicators").attr("id","list");
+      $("#list").eq(1).addClass("active");
+      var cityList = ["Bangkok", "London", "Paris", "Dubai", "New York City"];
+      var bkkhotel = ["The Siam", "Mandarin Oriental", "Ariyasomvilla", "COMO", "Adelphi49"];
+      var bkkevents = ["Buddha Temple", "BTS Skytrain", "Shops Empire Tailors", "Tour with Tong", "Thai Private Tour guide"];
+      var bkkrest = ["Snooze Coffee House", "Savelbergth", "Smoking Pug", "DID", "Punjab Grill"];
+       var lonhotel = ["Hotel 41", "Egerton House", "The Milestone", "Taj 51 Buckingham", "COMO The Halkin"];
+       var lonevents = ["British Museum", "National Gallery", "Tower of London", "Victoria and Albert Museum", "Big Ben"];
+       var lonrest = ["Peninsula Restaurant", "Kibele", "Anjanaas", "Liman", "The Clink"];
+       var parhotel = ["Masion Souquet", "XO Hotel", "Le Narcisse Blanc", "Hotel Monge", "Le Bristol"];
+       var parevents = ["Musse d'Orsay", "Eiffel Tower", "Musee du Louvre", "Notre Dame Cathedral", "Saintee-Chapelle"];
+       var parrest = ["ASPIC", "Les Apotres de Pigalle", "L'Abeille", "Boutary", "Le Cinq"];
+       var dubhotel = ["Royal Mirage Dubai", "Raffles Dubai", "The Palm Dubai", "Grosvenor House", "The Oberoi"];
+       var dubevents = ["Dubai Fountains", "Burj Khalifa", "The Dubai Mall", "Burj Al Arab", "Aquaventure Waterpark"];
+       var dubrest = ["Cielo", "Entrecote Cafe de Paris", "Sloane's", "Garden", "Indego"]; 
+       var nyhotel = ["414 Hotel", "Hotel Giraffe", "Casablanca Hotel", "Hotel 50 Bowery", "Crosby Street Hotel"];
+       var nyevents = ["Central Park", "911 Memorial", "The Metropolitan Art Museum", "Top of the Rock Observatory Deck", "Grand Central Terminal"];
+       var nyrest = ["Daniel", "Gabriel Kreuther", "Per Se", "Pisillo", "Lincoln Square Steak"];
+       // <!-- Bangkok -->
+      $("#bkk").on("click", function(){
+        //$("#hotel1").text("abc");
+        for (i=0; i<bkkhotel.length; i++) {
+          $("#hotel"+[i]).text(bkkhotel[i]);
+          $("#hotel"+[i]).attr('id', "bkkhotel"+[i]);
+        }
+        for (i=0; i<bkkevents.length; i++) {
+          $("#events"+[i]).text(bkkevents[i]);
+          $("#events"+[i]).attr('id', "bkkevents"+[i]);
+        }
+        for (i=0; i<bkkrest.length; i++) {
+          $("#restaurant"+[i]).text(bkkrest[i]);
+          $("#restaurant"+[i]).attr('id', "bkkrest"+[i]);
+        }
+      });
+      // <!-- London -->
+      $("#lon").on("click", function(){
+        //$("#hotel1").text("abc");
+        for (i=0; i<lonhotel.length; i++) {
+          $("#hotel"+[i]).text(lonhotel[i]);
+          $("#hotel"+[i]).attr('id', "lonhotel"+[i]);
+        }
+        for (i=0; i<lonevents.length; i++) {
+          $("#events"+[i]).text(lonevents[i]);
+          $("#events"+[i]).attr('id', "lonevents"+[i]);
+        }
+        for (i=0; i<bkkrest.length; i++) {
+          $("#restaurant"+[i]).text(lonrest[i]);
+          $("#restaurant"+[i]).attr('id', "lonrest"+[i]);
+        }
+      });
+      // <!-- Paris -->
+      $("#par").on("click", function(){
+        //$("#hotel1").text("abc");
+        for (i=0; i<parhotel.length; i++) {
+          $("#hotel"+[i]).text(parhotel[i]);
+          $("#hotel"+[i]).attr('id', "parhotel"+[i]);
+        }
+        for (i=0; i<lonevents.length; i++) {
+          $("#events"+[i]).text(parevents[i]);
+          $("#events"+[i]).attr('id', "parevents"+[i]);
+        }
+        for (i=0; i<bkkrest.length; i++) {
+          $("#restaurant"+[i]).text(parrest[i]);
+          $("#restaurant"+[i]).attr('id', "parrest"+[i]);
+        }
+      });
+      // <!-- Dubai -->
+       $("#dub").on("click", function(){
+        //$("#hotel1").text("abc");
+        for (i=0; i<dubhotel.length; i++) {
+          $("#hotel"+[i]).text(dubhotel[i]);
+          $("#hotel"+[i]).attr('id', "dubhotel"+[i]);
+        }
+        for (i=0; i<dubevents.length; i++) {
+          $("#events"+[i]).text(dubevents[i]);
+          $("#events"+[i]).attr('id', "dubevents"+[i]);
+        }
+        for (i=0; i<dubrest.length; i++) {
+          $("#restaurant"+[i]).text(dubrest[i]);
+          $("#restaurant"+[i]).attr('id', "dubrest"+[i]);
+        }
+      });
+       // <!-- New York -->
+        $("#ny").on("click", function(){
+        //$("#hotel1").text("abc");
+        for (i=0; i<nyhotel.length; i++) {
+          $("#hotel"+[i]).text(nyhotel[i]);
+          $("#hotel"+[i]).attr('id', "nyhotel"+[i]);
+        }
+        for (i=0; i<lonevents.length; i++) {
+          $("#events"+[i]).text(nyevents[i]);
+          $("#events"+[i]).attr('id', "nyevents"+[i]);
+        }
+        for (i=0; i<bkkrest.length; i++) {
+          $("#restaurant"+[i]).text(nyrest[i]);
+          $("#restaurant"+[i]).attr('id', "nyrest"+[i]);
+        }
+      });
+    var dataItinerary = [];
+      // <-- carrousel -->
+      $(".btn").on("click", function(){
+        $('.carousel').carousel('next');
+        // sending data to database
+        dataItinerary.push(this.innerText)
+        console.log(dataItinerary)
+      });
+      $('.last').click(function(){
+        for (var i=0; i<dataItinerary.length; i++){
+          $("#selected-data").append('<li>' + dataItinerary[i] +'</li>')
+        }
+      }) 
+    });
+      // <-- counter -->
+      var count = 0;
+      $().click(function(){
+      });
+    </script>
 </body>
 
 </html>
